@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.25"
+            android:text="Bill"
+            android:textStyle="bold" />
+        
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:text="$" />
+
+        <EditText
+            android:id="@+id/bill"
+            android:hint="0.00"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.75"
+            android:ems="10"
+            android:inputType="number|numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.25"
+            android:text="Rate" 
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.75"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="15" />
+        
+       	<TextView
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+       	    android:text="%" 
+       	    android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.25"
+            android:text="Split" 
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/split"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.75"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="1" />
+
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.50"
+            android:text="Tip" 
+            android:textStyle="bold"/>
+
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+		    android:layout_weight="0.10"
+		    android:text="$" 
+		    android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.39"
+            android:text="0.00" />
+
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.50"
+            android:text="Each" 
+            android:textStyle="bold"/>
+
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+		    android:layout_weight="0.10"
+		    android:text="$" 
+		    android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/each"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.39"
+            android:text="0.00" />
+
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"            
+            android:layout_weight="0.50"
+            android:text="Total" 
+            android:textStyle="bold"/>
+
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+		    android:layout_weight="0.10"
+		    android:text="$" 
+		    android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_weight="0.39"
+            android:text="0.00" />
+
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+		<Button
+		    android:id="@+id/reset"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+            android:textSize="26sp"
+		    android:text="Reset" 
+		    android:onClick="resetClickHandler"/>
+
+    </LinearLayout>
+
+</LinearLayout>
