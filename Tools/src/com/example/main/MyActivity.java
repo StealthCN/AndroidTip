@@ -1,6 +1,6 @@
 package com.example.main;
 
-import com.example.gps.GPSActivity;
+//import com.example.gps.GPSActivity;
 import com.example.tip.R;
 import com.example.tip.TipActivity;
 
@@ -65,7 +65,7 @@ public class MyActivity extends FragmentActivity implements TabListener
 				f = new TipActivity(); 
 				break;
 			case 1:
-				f = new GPSActivity(); 
+				//f = new GPSActivity(); 
 				break;
 			}
 			return f;
