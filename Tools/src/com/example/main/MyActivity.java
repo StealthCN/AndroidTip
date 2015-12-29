@@ -15,7 +15,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
-public class MainActivity extends FragmentActivity implements TabListener
+public class MyActivity extends FragmentActivity implements TabListener
 {
 	ViewPager myViewPager;
 	MyPagerAdapter myFragmentPagerAdapter;
